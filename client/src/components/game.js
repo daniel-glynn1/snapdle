@@ -90,7 +90,7 @@ export default function GamePage() {
     if (dailyCard) {
       localStorage.setItem('localDailyCard', JSON.stringify(dailyCard));
     }
-  }, [dailyCard]);
+  }, [dailyCard, localDailyCard]);
 
   const handleGuessChange = (e) => {
     let guess = e.target.value.toLowerCase();
@@ -220,9 +220,9 @@ export default function GamePage() {
 
       {dailyCard && (
       <div>
-          <button disabled={!dailyCard} onClick={() => resetDay()} className='bg-blue-600 text-white px-4 py-2 mt-2 rounded'>
+          {/* <button disabled={!dailyCard} onClick={() => resetDay()} className='bg-blue-600 text-white px-4 py-2 mt-2 rounded'>
             Reset
-          </button>
+          </button> */}
         {(hintOption && !gameOver && !showHint) &&
           <button disabled={!dailyCard || showHint} onClick={() => handleHintClick()} className='bg-blue-600 text-white px-4 py-2 mt-2 rounded'>
             Hint: Ability Text
@@ -255,7 +255,7 @@ export default function GamePage() {
                 <p>Nice! You guessed <em className='font-bold text-green-800'>{dailyCard.Name}</em> in {guessedCards.length} guess{guessedCards.length > 1 && 'es'}</p>
               )
             ) : (
-              <p>Unlucky, today's card was <em className='font-bold text-red-900'>{dailyCard.Name}</em></p>
+              <p>Unlucky, today&apos;s card was <em className='font-bold text-red-900'>{dailyCard.Name}</em></p>
             )}
             
           </div>

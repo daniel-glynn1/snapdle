@@ -35,12 +35,12 @@ export default function SettingsPage() {
               A yellow <em className='text-purple-500 font-bold'>Name</em> means the correct card starts with the same letter as the guessed card. 
             </li>
             <li>
-              A yellow <em className='text-purple-500 font-bold'>Cost</em> / <em className='text-purple-500 font-bold'>Power</em> / other quantitative column means that value is within one of the correct card's value.
+              A yellow <em className='text-purple-500 font-bold'>Cost</em> / <em className='text-purple-500 font-bold'>Power</em> / other quantitative column means that value is within one of the correct card&apos;s value.
             </li>
             
           </ul>
           <li>
-            On the 7th guess, you get the option to show the card's <em className='text-purple-500 font-bold'>Ability Text</em> as a hint.
+            On the 7th guess, you get the option to show the card&apos;s <em className='text-purple-500 font-bold'>Ability Text</em> as a hint.
           </li>
           
           <li>
@@ -50,7 +50,7 @@ export default function SettingsPage() {
             <li>
               <em className='text-purple-500 font-bold'>Series</em> refers to the current series/pool the card is in (0-5). 
               <ul className='list-disc ml-4 flex flex-col gap-2'>
-                <li>Cards listed under the Starter or Recruit series' are considered to be series 0.</li>
+                <li>Cards listed under the Starter or Recruit series&apos; are considered to be series 0.</li>
                 <li>The season pass card is considered to be series 5.</li>
               </ul>
             </li>
