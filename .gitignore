@@ -3,4 +3,4 @@ node_modules/
 .swc/
 .*.env
 .env
-.server/.env
+./server/.env
