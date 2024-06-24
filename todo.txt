@@ -1,0 +1,74 @@
+todo:
+? reset local storage after new day
+
+test whether local storage is reset on new day
+
+x implement easy mode
+
+x create favicon (use an 's'?, look like a blank carrd?) S?
+
+host front and back end on render
+
+x share button that saves the colored squares to the clipboard
+
+soon:
+feedback link?
+link to github?
+connecting to server message?
+
+done: 
+x pop up notifications instead of plain message
+  x for invalid guesses
+  x for correct guess
+
+x dont allow guesses after correct guess
+
+x dont allow guesses after 6 guesses
+
+x dont show input after 6 guesses
+
+x give option for 1 more guess with hint after 6th guess
+
+x save game over state on refresh
+
+x help page
+  x cutoff date
+  x explain green=correct
+  x explain ability type
+  x explain series, specifically series 0
+  x close button
+  x explain easy mode
+  x make look more readable
+
+x settings page
+  x dark/light mode
+  x easy mode, where it gives you up or down on cost and power
+  x easy mode explanation
+  x close button
+
+
+
+x implement dark mode
+
+x finish dark mode
+
+x slightly bigger/wider screen for desktop
+
+x some type of color scheme in 'snapdle' title
+
+x update data for new cards and balance changes
+
+
+
+
+maybe later:
+
+show image of correct card?
+
+different layout of table for mobile (a la poeltl)?
+
+stats page
+
+new column of data with number of balance changes to card
+
+snapdle bot with information theory guesses? [longshot lol]
