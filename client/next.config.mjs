@@ -7,6 +7,10 @@ const nextConfig = {
       {
         source: '/api/:path*',
         destination: 'https://snap-dle-api.onrender.com/api/:path*' // Adjust to your backend server URL
+      },
+      {
+        source: '/api',
+        destination: 'https://snap-dle-api.onrender.com/api' // Adjust to your backend server URL
       }
     ];
   }
