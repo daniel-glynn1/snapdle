@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:5050/api/:path*' // Adjust to your backend server URL
+        destination: 'https://snap-dle-api.onrender.com/api/:path*' // Adjust to your backend server URL
       }
     ];
   }
