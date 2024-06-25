@@ -22,21 +22,15 @@ export default function GamePage() {
 
 
   useEffect(() => {   
-    console.log("use effect, trying to fetch data");
-    console.log(process.env.NEXT_PUBLIC_API_URL);
-    // fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/dailycard`)
-    window.fetch(`https://snap-dle-api.onrender.com/api/dailycard`)
+    fetch('/api/dailycard')
       .then(response => response.json())
       .then(data => setDailyCard(data))
       .catch(error => console.error('Error fetching daily card:', error));
 
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/cards`)
+    fetch('/api/cards')
       .then(response => response.json())
       .then(data => setAllCardNames(data.map(card => card.Name)))
       .catch(error => console.error('Error fetching card options:', error));
-
-    console.log(dailyCard);
-    console.log(allCardNames);
 
     const localCard = JSON.parse(localStorage.getItem('localDailyCard'));
     if (localCard) {
