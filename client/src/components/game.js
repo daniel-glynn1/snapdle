@@ -132,7 +132,7 @@ export default function GamePage() {
 
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/card?name=${currentGuess}`);
+      const response = await fetch('/api/card?name=${currentGuess}');
       const guessedCard = await response.json();
 
       setGuessedCards([...guessedCards, guessedCard]);
