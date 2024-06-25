@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: snap-dle
+  runtime: static
+  buildCommand: npm install; npm run build
+  staticPublishPath: out
