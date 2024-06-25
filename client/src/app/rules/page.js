@@ -55,7 +55,7 @@ export default function SettingsPage() {
               </ul>
             </li>
             <li>
-              <em className='text-purple-500 font-bold'>Ability Type</em> can be on of four option: Ongoing, On Reveal, Other, or None. Some cards (e.g. Blob) are listed as multiple, but will still show as an exact match for either of their ability types.
+              <em className='text-purple-500 font-bold'>Ability Type</em> can be on of four options: Ongoing, On Reveal, Other, or None. Some cards (e.g. Blob) are listed as multiple, but will still show as an exact match for either of their ability types.
             </li>
             <li>
               <em className='text-purple-500 font-bold'>Release Month</em> and <em className='text-purple-500 font-bold'>Release Year</em> refer to the date the card was released.

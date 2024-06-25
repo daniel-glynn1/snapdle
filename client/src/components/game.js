@@ -21,25 +21,26 @@ export default function GamePage() {
   const maxGuesses = 8;
 
 
-  useEffect(() => {    
+  useEffect(() => {   
+    console.log("use effect, trying to fetch data");
     fetch('/api/dailycard')
       .then(response => response.json())
       .then(data => setDailyCard(data))
       .catch(error => console.error('Error fetching daily card:', error));
 
-    // Fetch all card options
     fetch('/api/cards')
       .then(response => response.json())
       .then(data => setAllCardNames(data.map(card => card.Name)))
       .catch(error => console.error('Error fetching card options:', error));
 
-    // Load local daily card from localStorage
+    console.log(dailyCard);
+    console.log(allCardNames);
+
     const localCard = JSON.parse(localStorage.getItem('localDailyCard'));
     if (localCard) {
       setLocalDailyCard(localCard);
     }
     
-    // Load guesses from localStorage
     const savedGuesses = JSON.parse(localStorage.getItem('guessedCards'));
     if (savedGuesses) {
       setGuessedCards(savedGuesses);
