@@ -185,7 +185,7 @@ export default function GamePage() {
       results += "(hint used)";
     }
 
-    results += "https://snap-dle.onrender.com/"
+    results += "https://snap-dle.onrender.com/";
 
 
     navigator.clipboard.writeText(results);
