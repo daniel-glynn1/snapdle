@@ -132,7 +132,9 @@ export default function GamePage() {
 
 
     try {
-      const response = await fetch('/api/card?name=${currentGuess}');
+      const response = await fetch(`/api/card?name=${currentGuess}`);
+      // const response = await fetch('/api/card/:${currentGuess}');
+
       const guessedCard = await response.json();
 
       setGuessedCards([...guessedCards, guessedCard]);
