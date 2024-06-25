@@ -7,7 +7,7 @@ x implement easy mode
 
 x create favicon (use an 's'?, look like a blank carrd?) S?
 
-host front and back end on render
+x host front and back end on render
 
 x share button that saves the colored squares to the clipboard
 

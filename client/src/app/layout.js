@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <html lang="en" suppressHydrationWarning>
         <body className="w-full flex flex-col items-center justify-start" >
           <Provider>
-            <div className="min-w-[375px] w-1/2" >
+            <div className="min-w-[375px] w-1/2 max-w-[600px]" >
               <Navbar/>
               <div>{children}</div>
             </div>
