@@ -23,12 +23,12 @@ export default function GamePage() {
 
   useEffect(() => {   
     console.log("use effect, trying to fetch data");
-    fetch('/api/dailycard')
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/dailycard`)
       .then(response => response.json())
       .then(data => setDailyCard(data))
       .catch(error => console.error('Error fetching daily card:', error));
 
-    fetch('/api/cards')
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/cards`)
       .then(response => response.json())
       .then(data => setAllCardNames(data.map(card => card.Name)))
       .catch(error => console.error('Error fetching card options:', error));
@@ -136,7 +136,7 @@ export default function GamePage() {
 
 
     try {
-      const response = await fetch(`/api/card?name=${currentGuess}`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/card?name=${currentGuess}`);
       const guessedCard = await response.json();
 
       setGuessedCards([...guessedCards, guessedCard]);

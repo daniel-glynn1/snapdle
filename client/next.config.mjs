@@ -5,9 +5,12 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://snap-dle-api.onrender.com/api/:path*' // Adjust to your backend server URL
+        destination: `${process.env.NEXT_PUBLIC_API_URL}/api/:path*`
       }
     ];
+  },
+  env: {
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL
   }
 };
 
