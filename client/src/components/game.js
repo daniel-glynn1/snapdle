@@ -23,7 +23,9 @@ export default function GamePage() {
 
   useEffect(() => {   
     console.log("use effect, trying to fetch data");
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/dailycard`)
+    console.log(process.env.NEXT_PUBLIC_API_URL);
+    // fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/dailycard`)
+    fetch(`https://snap-dle-api.onrender.com/api/dailycard`)
       .then(response => response.json())
       .then(data => setDailyCard(data))
       .catch(error => console.error('Error fetching daily card:', error));
